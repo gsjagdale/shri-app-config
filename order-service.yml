@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://gsjagdale-gsjagdale-17dc.c.aivencloud.com:18959/defaultdb?sslmode=require
+    username: avnadmin
+    password: ${postgres.password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
